@@ -2,7 +2,13 @@
 
 #### Javascript-Tutorial by John Smilga
 
-## You can see all projects in action here
+## Progress
+
+29.05.22: Started Tutorial
+
+30.05.22: Project 01 completed 'Color Flipper' -> using Math.random and .floor and for-loop. An awesome global.css !
+
+## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
 
