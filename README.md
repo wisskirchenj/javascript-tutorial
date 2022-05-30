@@ -8,6 +8,8 @@
 
 30.05.22: Project 01 completed 'Color Flipper' -> using Math.random and .floor and for-loop. An awesome global.css !
 
+30.05.22: Project 02 completed 'Counter' -> one div container for all; querySelectorAll gives NodeList -> foreach...
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
