@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starter</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>review project</h1>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3 - Reviews</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <div class="title">
+        <h2>Our Reviews</h2>
+        <hr class="underline">
+      </div>
+
+      <div class="review">
+        <div class="img-container">
+          <img id="person-img" src="person-1.jpeg">
+        </div>
+        <h4 id="author">Susan Smith</h4>
+        <p id="job">SalesMgr</p>
+        <p id="info">Some Info which is about
+          more than a line long. Some Info which is about
+          more than a line long.</p>
+        <button class="prev-btn">
+          <span class="fas fa-chevron-left"></span>
+        </button>
+        <button class="next-btn">
+          <span class="fas fa-chevron-right"></span>
+        </button><br>
+        <button class="random-btn">surprise me</button>
+      </div>
+    </section>
+  </main>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
