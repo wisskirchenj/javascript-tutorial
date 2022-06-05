@@ -10,6 +10,8 @@
 
 30.05.22: Project 02 completed 'Counter' -> one div container for all; querySelectorAll gives NodeList -> foreach...
 
+05.06.22: Project 03 completed 'Reviews' -> section and article
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
