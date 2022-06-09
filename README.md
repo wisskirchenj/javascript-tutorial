@@ -12,6 +12,8 @@
 
 05.06.22: Project 03 completed 'Reviews' -> section and article
 
+09.06.22: Project 04 completed 'Navbar' -> documentElement.classlist add('.class') or toggle('.class') or remove, contains
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
