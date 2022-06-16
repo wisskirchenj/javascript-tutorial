@@ -14,7 +14,7 @@
 
 09.06.22: Project 04 completed 'Navbar' -> documentElement.classlist add('.class') or toggle('.class') or remove, contains
 
-16.06.22: Project 05 completed 'Sidebar' -> use <aside> for sidebar with fixed width. use classlist.toggle and classlist.remove on button listeners.
+16.06.22: Project 05 completed 'Sidebar' -> use \<aside> for sidebar with fixed width and use classlist.toggle and classlist.remove on button listeners.
 Extensive use of fontawesome - and animations with @keystroke
 
 ## Reference: All projects in action here
