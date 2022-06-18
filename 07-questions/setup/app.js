@@ -10,6 +10,9 @@ expandBtns.forEach((btn) => {
   });
 });
 
+// other way: add event listener inside question loop
+// -> see final app.js
+
 collapseBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     removeAllShowTexts();

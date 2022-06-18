@@ -19,6 +19,8 @@ Extensive use of fontawesome - and animations with @keystroke
 
 18.06.22: Project 06 completed 'Modal' -> again using classList.add /.remove, this time to toggle visibility and z-index. Glasspane by transparency 0.5 overlay..
 
+18.06.22: Project 07 completed 'Questions' -> go up form event with e.currentTarget.parentElement, font-awesome regular far-..., forEach on NodeList
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
