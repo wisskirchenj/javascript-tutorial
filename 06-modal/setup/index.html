@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="hero">
-      <div class="banner">
-        <h1>Modal project</h1>
-        <button class="btn modal-btn">open modal</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="hero">
+    <div class="banner">
+      <h1>Modal project</h1>
+      <button class="btn modal-btn">open modal</button>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <h4>Modal Content</h4>
+        <button class="close-btn">
+          <span class="fas fa-times"></span>
+        </button>
       </div>
-    </main>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+    </div>
+  </main>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
