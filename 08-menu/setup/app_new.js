@@ -106,7 +106,7 @@ categories.forEach((category) => {
 });
 
 const sectionCenter = document.querySelector(".section-center");
-const filterBtns = document.querySelectorAll(".filter-btn");
+const filterBtns = btnContainer.querySelectorAll(".filter-btn");
 
 window.addEventListener('DOMContentLoaded', () => {
   displayMenuItems(menu);
