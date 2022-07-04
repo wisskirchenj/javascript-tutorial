@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>video project</h1>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <section class="preloader">
+      <img src="preloader.gif" alt="loading..">
+    </section>
+    <section class="video-container">
+      <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        Browser does not support video.
+      </video>
+    </section>
+    <h1>Video Project</h1>
+    <button type="button" class="switch-btn">
+      <span>play</span>
+      <span>pause</span>
+      <div class="switch">
+      </div>
+    </button>
+
+  </header>
+
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
