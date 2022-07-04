@@ -23,6 +23,8 @@ Extensive use of fontawesome - and animations with @keystroke
 
 20.06.22: Project 08 completed 'Menu' -> dataset attributes data-attrib=val, array-streaming (map, filter, join, reduce), DOMContentLoaded - window Listener, Set()
 
+04.07.22: Project 09 completed 'Video' -> video muted/autoplay, video play() and pause(), preload - window-'load' event
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
