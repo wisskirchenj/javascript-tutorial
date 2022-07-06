@@ -25,7 +25,7 @@ Extensive use of fontawesome - and animations with @keystroke
 
 04.07.22: Project 09 completed 'Video' -> video muted/autoplay, video play() and pause(), preload - window-'load' event
 
-xx.07.22: Project 10 completed 'Scroll' -> scroll-behavior: smooth, overflow: hidden,
+xx.07.22: Project 10 completed 'Scroll' -> scroll-behavior: smooth, overflow: hidden, Element.getBoundingClientRect(), new Date(), scrollEvent listening, window.pageYoffset read-only, !important in css overwrites element style attributes inline.
 
 ## Reference: All projects in action here
 
