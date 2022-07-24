@@ -25,7 +25,9 @@ Extensive use of fontawesome - and animations with @keystroke
 
 04.07.22: Project 09 completed 'Video' -> video muted/autoplay, video play() and pause(), preload - window-'load' event
 
-xx.07.22: Project 10 completed 'Scroll' -> scroll-behavior: smooth, overflow: hidden, Element.getBoundingClientRect(), new Date(), scrollEvent listening, window.pageYoffset read-only, !important in css overwrites element style attributes inline. slice(index) substring-from index
+07.07.22: Project 10 completed 'Scroll' -> scroll-behavior: smooth, overflow: hidden, Element.getBoundingClientRect(), new Date(), scrollEvent listening, window.pageYoffset read-only, !important in css overwrites element style attributes inline. slice(index) substring-from index
+
+24.07.22: Project 11 completed 'Tabs' -> data-id attribute accessed by el.dataset.id / articles and grid-layout for column-views / :nth-child(i)
 
 ## Reference: All projects in action here
 
