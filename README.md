@@ -29,7 +29,8 @@ Extensive use of fontawesome - and animations with @keystroke
 
 24.07.22: Project 11 completed 'Tabs' -> data-id attribute accessed by el.dataset.id / articles and grid-layout for column-views / :nth-child(i)
 
-05.08.22: Project 12 completed 'countdown-timer' -> css-selector for element that has NOT a class - e.g. h4:not(.expired),
+05.08.22: Project 12 completed 'countdown-timer' -> css-selector for element that has NOT a class - e.g. h4:not(.expired), date functions, Math.trunc(), zeropadding String.padStart(),
+interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-functionality, (mixed) array from vars, just as: arr = [a,b,c,d];
 
 ## Reference: All projects in action here
 
