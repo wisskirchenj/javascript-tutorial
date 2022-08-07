@@ -32,6 +32,8 @@ Extensive use of fontawesome - and animations with @keystroke
 05.08.22: Project 12 completed 'countdown-timer' -> css-selector for element that has NOT a class - e.g. h4:not(.expired), date functions, Math.trunc(), zeropadding String.padStart(),
 interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-functionality, (mixed) array from vars, just as: arr = [a,b,c,d];
 
+07.08.22: Project 13 completed 'lorem ipsum' -> templates can be within templates. Form submit-listener & ev.preventDefault(), input.value
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
