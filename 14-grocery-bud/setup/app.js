@@ -1,4 +1,3 @@
-// ****** SELECT ITEMS **********
 const alert = document.querySelector(".alert");
 const form = document.querySelector("form");
 const groceryInput = document.querySelector("#grocery");
@@ -11,54 +10,8 @@ const items = localStorage.getItem('groceryItems') ?
   JSON.parse(localStorage.getItem('groceryItems')) : [];
 let itemInEdit = null;
 
+// --- initial load from localStorage
 loadGroceryItems();
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (groceryInput.value == "") {
-    displayAlert("please enter value", true);
-    return;
-  }
-  if (formBtn.textContent === "edit") {
-    formBtn.textContent = "submit";
-    items.splice(items
-      .indexOf(itemInEdit.querySelector(".title")
-        .textContent), 1, groceryInput.value);
-    storeItems();
-    itemInEdit.querySelector(".title").textContent = groceryInput.value;
-    displayAlert("value changed");
-  } else {
-    addGroceryItem(groceryInput.value);
-  }
-  form.reset();
-});
-
-function storeItems() {
-  localStorage.setItem('groceryItems', JSON.stringify(items));
-}
-
-// ****** EVENT LISTENERS **********
-clearBtn.addEventListener('click', (event) => {
-  groceryCont.querySelectorAll(".grocery-item")
-    .forEach(item => item.remove());
-  groceryCont.classList.remove("show-container");
-  items.splice(0, items.length);
-  storeItems();
-  formBtn.textContent = "submit";
-  displayAlert("empty List", true);
-  form.reset();
-});
-
-function displayAlert(text, danger = false) {
-  alert.textContent = text;
-  alert.classList
-    .add(danger ? "alert-danger" : "alert-success");
-  setTimeout(() => {
-    alert.textContent = "";
-    alert.classList
-      .remove(danger ? "alert-danger" : "alert-success");
-  }, 1000);
-}
 
 function loadGroceryItems() {
   if (items.length == 0) {
@@ -71,9 +24,38 @@ function loadGroceryItems() {
   groceryCont.classList.add("show-container");
 }
 
+function storeItems() {
+  localStorage.setItem('groceryItems', JSON.stringify(items));
+}
+
+// form submit listener - Submit to add or Edit item
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (groceryInput.value == "") {
+    displayAlert("please enter value", true);
+    return;
+  }
+  if (formBtn.textContent === "edit") {
+    handleEdit();
+  } else {
+    addGroceryItem(groceryInput.value);
+  }
+  resetFormAndStore();
+});
+
+// clear all listener
+clearBtn.addEventListener('click', (event) => {
+  groceryCont.querySelectorAll(".grocery-item")
+    .forEach(item => item.remove());
+  groceryCont.classList.remove("show-container");
+  items.splice(0, items.length);
+  displayAlert("empty List", true);
+  resetFormAndStore();
+});
+
+// addItem functionality
 function addGroceryItem(title) {
   items.push(title);
-  storeItems();
   groceryCont.classList.add("show-container");
   groceryCont.insertBefore(createGroceryItem(title), clearBtn);
   displayAlert("item added to the list");
@@ -92,32 +74,54 @@ function createGroceryItem(title) {
           <span class="fas fa-trash"></span>
         </button>
       </div>`;
-  addClickListeners(groceryItem);
+  addDeleteListener(groceryItem);
+  addEditListener(groceryItem);
   return groceryItem;
 }
 
-function addClickListeners(groceryItem) {
+// delete handling
+function addDeleteListener(groceryItem) {
   let deleteBtn = groceryItem.querySelector(".delete-btn");
   deleteBtn.addEventListener('click', event => {
-    form.reset();
-    formBtn.textContent = "submit";
     groceryItem.remove();
-    items.splice(items
-      .indexOf(groceryItem.querySelector(".title")
-        .textContent), 1);
-    storeItems();
+    items.splice(items.indexOf(groceryItem.querySelector(".title")
+      .textContent), 1);
+    resetFormAndStore();
     displayAlert("item removed", true);
-    if (groceryCont.querySelectorAll(".grocery-item")
-      .length == 0) {
+    if (groceryCont.querySelectorAll(".grocery-item").length == 0) {
       groceryCont.classList.remove("show-container");
     }
   });
+}
 
+// edit funtionality
+function addEditListener(groceryItem) {
   let editBtn = groceryItem.querySelector(".edit-btn");
   editBtn.addEventListener('click', event => {
     formBtn.textContent = 'edit';
-    itemInEdit = groceryItem;
-    groceryInput.value = groceryItem
-      .querySelector(".title").textContent;
+    itemInEdit = groceryItem.querySelector(".title");
+    groceryInput.value = itemInEdit.textContent;
   });
+}
+
+function handleEdit() {
+  items.splice(items.indexOf(itemInEdit.textContent),
+    1, groceryInput.value);
+  itemInEdit.textContent = groceryInput.value;
+  displayAlert("value changed");
+}
+
+function resetFormAndStore() {
+  form.reset();
+  formBtn.textContent = "submit";
+  storeItems(); // to localStorage
+}
+
+function displayAlert(text, danger = false) {
+  alert.textContent = text;
+  alert.classList.add(danger ? "alert-danger" : "alert-success");
+  setTimeout(() => {
+    alert.textContent = "";
+    alert.classList.remove(danger ? "alert-danger" : "alert-success");
+  }, 1000);
 }

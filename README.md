@@ -34,7 +34,7 @@ interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-f
 
 07.08.22: Project 13 completed 'lorem ipsum' -> templates can be within templates. Form submit-listener & ev.preventDefault(), input.value, array.push, array.includes
 
-20.08.22: Project 14 completed 'Grocery Bud' -> local storage, default function parameter (a=val), setTimeout(fn, millis)
+20.08.22: Project 14 completed 'Grocery Bud' -> local storage, JSON stringify and parse, Array.splice .indexOf, form and input.value form.reset(),  default function parameter (a=val), setTimeout(fn, millis). Element.remove(), document.createElement, Node.insertBefore(element, before)
 
 ## Reference: All projects in action here
 
