@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grocery Bud</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>grocery bud project</h1>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grocery Bud</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section class="section-center">
+    <div class="alert">
+
+    </div>
+    <div class="grocery-form">
+      <h3>grocery bud</h3>
+      <form class="form-control">
+        <input type="text" id="grocery" placeholder="e.g. eggs">
+        <button type="submit" class="submit-btn">
+          submit
+        </button>
+      </form>
+    </div>
+    <div class="grocery-container show-container">
+      <div class="grocery-item">
+        <div class="title">
+          egg
+        </div>
+        <div>          
+          <button type="button" class="edit-btn">
+            <span class="fas fa-edit"></span>
+          </button>
+          <button type="button" class="delete-btn">
+            <span class="fas fa-trash"></span>
+          </button>
+        </div>
+      </div>
+      <div class="grocery-item">
+        <div class="title">
+          butter
+        </div>
+        <div>
+          <button type="button" class="edit-btn">
+            <span class="fas fa-edit"></span>
+          </button>
+          <button type="button" class="delete-btn">
+            <span class="fas fa-trash"></span>
+          </button>
+        </div>
+      </div>
+      <button class="clear-btn">
+        clear items
+      </button>
+    </div>
+  </section>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
