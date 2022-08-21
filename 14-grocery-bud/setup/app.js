@@ -8,7 +8,7 @@ const formBtn = document.querySelector(".submit-btn");
 
 const items = localStorage.getItem('groceryItems') ?
   JSON.parse(localStorage.getItem('groceryItems')) : [];
-let itemInEdit = null;
+let itemInEdit;
 
 // --- initial load from localStorage
 loadGroceryItems();
@@ -62,7 +62,7 @@ function addGroceryItem(title) {
 }
 
 function createGroceryItem(title) {
-  let groceryItem = document.createElement("div");
+  const groceryItem = document.createElement("div");
   groceryItem.classList.add("grocery-item");
   groceryItem.innerHTML =
     `<div class="title">${title}</div>
@@ -81,7 +81,7 @@ function createGroceryItem(title) {
 
 // delete handling
 function addDeleteListener(groceryItem) {
-  let deleteBtn = groceryItem.querySelector(".delete-btn");
+  const deleteBtn = groceryItem.querySelector(".delete-btn");
   deleteBtn.addEventListener('click', event => {
     groceryItem.remove();
     items.splice(items.indexOf(groceryItem.querySelector(".title")
@@ -96,7 +96,7 @@ function addDeleteListener(groceryItem) {
 
 // edit funtionality
 function addEditListener(groceryItem) {
-  let editBtn = groceryItem.querySelector(".edit-btn");
+  const editBtn = groceryItem.querySelector(".edit-btn");
   editBtn.addEventListener('click', event => {
     formBtn.textContent = 'edit';
     itemInEdit = groceryItem.querySelector(".title");
@@ -123,5 +123,5 @@ function displayAlert(text, danger = false) {
   setTimeout(() => {
     alert.textContent = "";
     alert.classList.remove(danger ? "alert-danger" : "alert-success");
-  }, 1000);
+  }, 2000);
 }
