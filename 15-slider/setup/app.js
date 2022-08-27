@@ -5,6 +5,10 @@ const slides = document.querySelectorAll(".slide");
 document.addEventListener('DOMContentLoaded', () => {
   prevBtn.style.display = 'none';
 });
+
+slides.forEach((slide, i) => {
+  slide.style.left = `${i * 100}%`;
+});
 const slideCount = slides.length;
 let currentSlide = 1;
 
