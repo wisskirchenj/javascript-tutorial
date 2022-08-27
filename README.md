@@ -36,6 +36,8 @@ interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-f
 
 20.08.22: Project 14 completed 'Grocery Bud' -> local storage, JSON stringify and parse, Array.splice .indexOf, form and input.value form.reset(),  default function parameter (a=val), setTimeout(fn, millis). Element.remove(), document.createElement, Node.insertBefore(element, before)
 
+27.08.22: Project 15 'Slider' ->
+
 ## Reference: All projects in action here
 
 [Projects](https://www.vanillajavascriptprojects.com/)
