@@ -3,7 +3,7 @@
 #### Javascript-Tutorial by John Smilga
 
 The files were originally cloned from the GitHub-Repo https://github.com/john-smilga/javascript-basic-projects.
-The sources of this repo are my own implementation of the 15 free projects - based upon the setup-folder provided.
+The sources of this repo are my own implementation of the 15 free projects - based upon the setup-folders provided.
 
 ## Progress
 
@@ -41,7 +41,7 @@ interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-f
 
 27.08.22: Project 15 completed 'Slider' -> set images outside viewport by style-attrib 'left:100%' and 'overflow:hidden' at parent. move into viewport by style-attrib 'transform:translateX(-100%)'.
 
-## Reference: Tutorial projects
+## Reference: The free tutorial projects
 
 1. Color Flipper
 2. Counter
