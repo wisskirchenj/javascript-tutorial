@@ -18,7 +18,7 @@ The sources of this repo are my own implementation of the 15 free projects - bas
 09.06.22: Project 04 completed 'Navbar' -> documentElement.classlist add('.class') or toggle('.class') or remove, contains
 
 16.06.22: Project 05 completed 'Sidebar' -> use \<aside> for sidebar with fixed width and use classlist.toggle and classlist.remove on button listeners.
-Extensive use of fontawesome - and animations with @keystroke
+Extensive use of font-awesome - and animations with @keystroke
 
 18.06.22: Project 06 completed 'Modal' -> again using classList.add /.remove, this time to toggle visibility and z-index. glass pane by transparency 0.5 overlay..
 
