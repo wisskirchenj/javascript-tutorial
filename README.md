@@ -2,6 +2,8 @@
 
 #### Javascript-Tutorial by John Smilga
 
+The sources are originally cloned from the 
+
 ## Progress
 
 29.05.22: Started Tutorial
