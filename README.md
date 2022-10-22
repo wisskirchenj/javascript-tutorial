@@ -2,7 +2,8 @@
 
 #### Javascript-Tutorial by John Smilga
 
-The sources are originally cloned from the 
+The files were originally cloned from the GitHub-Repo https://github.com/john-smilga/javascript-basic-projects.
+The sources of this repo are my own implementation of the 15 free projects - based upon the setup-folder provided.
 
 ## Progress
 
