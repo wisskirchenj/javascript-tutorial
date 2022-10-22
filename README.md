@@ -41,9 +41,7 @@ interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-f
 
 27.08.22: Project 15 completed 'Slider' -> set images outside viewport by style-attrib 'left:100%' and 'overflow:hidden' at parent. move into viewport by style-attrib 'transform:translateX(-100%)'.
 
-## Reference: All projects in action here
-
-[Projects](https://www.vanillajavascriptprojects.com/)
+## Reference: Tutorial projects
 
 1. Color Flipper
 2. Counter
@@ -60,20 +58,3 @@ interval = setInterval(fn, timeinterval) and clearInterval(interval) for clock-f
 13. Lorem Ipsum
 14. Grocery Bud
 15. Slider
-
-#### Course Exclusive
-
-16. Counters (OOP)
-17. Gallery (OOP)
-18. Numbers
-19. Dark Mode
-20. Filters
-21. Dad Jokes
-22. Products
-23. Random User
-24. Cocktails
-25. Slider
-26. Stripe Submenus
-27. Pagination
-28. Wikipedia
-29. Comfy Sloth
